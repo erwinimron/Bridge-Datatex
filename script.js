@@ -14,7 +14,7 @@ document.getElementById('dataForm').addEventListener('submit', function(event) {
     }
 
     // Kirim data untuk validasi dan token
-    fetch('/validate-and-get-token', {
+    fetch('https://busana-test.centricsoftware.com/csi-requesthandler/api/v2/session', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
