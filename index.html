@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get API</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bridge Integration</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Get API</h1>
-    <input type="text" id="link-api" placeholder="Masukkan URL API">
-    <button id="btn-get-api">Get API</button>
-    <div id="output"></div>
+    <div class="container">
+        <h1>Bridge Integration</h1>
+        <form id="dataForm">
+            <label for="attribute1">Attribute 1:</label>
+            <input type="text" id="attribute1" name="attribute1" required><br><br>
+            <label for="attribute2">Attribute 2:</label>
+            <input type="text" id="attribute2" name="attribute2" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="errorMessage" class="error"></p>
+        <p id="tokenMessage"></p>
+    </div>
 
     <script src="script.js"></script>
 </body>
